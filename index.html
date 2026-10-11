@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Real-Time Character Counter</title>
+
+    <!-- Connect CSS file -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Connect JavaScript file -->
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Main Container -->
+    <div class="container">
+
+        <h1>Character Counter</h1>
+
+        <p class="subtitle">
+            Write your message and track your characters.
+        </p>
+
+        <!-- Message Label -->
+        <label for="message">Your Message</label>
+
+        <!-- Text Area -->
+        <textarea id="message" placeholder="Start typing your message..." maxlength="200"></textarea>
+
+        <!-- Character Counter -->
+        <div class="counter">
+
+            <p id="characterCount">0 / 200 characters</p>
+
+            <p id="remainingCount">200 characters remaining</p>
+
+        </div>
+
+        <!-- Warning Message -->
+        <p id="warningMessage"></p>
+
+    </div>
+
+</body>
+
+</html>
